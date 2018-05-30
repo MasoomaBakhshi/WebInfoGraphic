@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>World Happiness Report</title>
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+	
+  <link rel="stylesheet" href="style/base.css"/>
+  <link rel="stylesheet" type="text/css" href="style/style.css"/>
+</head>
+<body>
+
+<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div> 
+
+<ul class="nav nav-tabs nav-justified navbar navbar-default navbar-inverse">
+  <li><a href="index.html">World Happiness Report</a></li>
+  <li><a href="map2017.html">2017's Report</a></li>
+  <li><a href="map2016.html">2016's Report</a></li>
+  <li  class="active"><a href="map2015.html">2015's Report</a></li>
+</ul>
+    <h2>World Happiness Report (2015)</h2><hr/>
+        <center><strong id="info">Happiness Score 0f 2015 (Out of 10)</strong><br/><br/>
+        <div class="label" style=" background-color:#009F6B;"><span><strong>Above 7.1</strong></span></div>
+        <div class="label" style=" background-color:#800080;"><span><strong>6.1 - 7.0</strong></span></div>
+        <div class="label" style=" background-color:#0087BD;"><span><strong>5.1 - 6.0</strong></span></div>
+        <div class="label" style=" background-color:#FFD300;"><span><strong>4.1 - 5.0</strong></span></div>
+        <div class="label" style=" background-color:#FF7D40;"><span><strong>0.3 - 4.0</strong></span></div>
+        <div class="label" style=" background-color:#C40233;"><span><strong>0.1 - 3.0</strong></span></div>
+        <div class="label" style="background-color:#ccc;"><span><strong>Not in List</strong></span></div></center>
+        
+        <div class="row">
+            <div class="col-md-8" id="canvas-svg">        
+        			<div id="tooltip-container"></div>
+            </div> 
+            <div class="col-md-2" id="chart">
+            		<h1>Detail</h1><br/>
+   				 <strong id="info">Click on desired Country Map to get detail Scores based on which result is calculated.</strong> 
+           </div>
+        </div>    
+        
+        <div style="left: 203px; top: 27px; display: none;" class="tip"></div> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+<script src="script/2015.js"></script>
+
+</body>
+</HTML>
